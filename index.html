@@ -11,7 +11,36 @@
   </head>
   <body>
 
+    <!-- Messenger Plugin de chat Code -->
+    <div id="fb-root"></div>
 
+    <!-- Your Plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101559549382209");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="btn-volver-arriba" id="btnVolverArriba">
       <a href="#" class="volver-arriba">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
@@ -31,7 +60,7 @@
         </div>
         <nav class="menu-principal">
           <a href="#" class="volver-arriba">INICIO</a>
-          <a href="#proyectos" class="scroll-suave">BENEFICIOS</a>
+          <a href="#beneficios" class="scroll-suave">BENEFICIOS</a>
           <a href="#acercaDe" class="scroll-acercaDe">¿QUIENES SOMOS?</a>
           <a href="#equipo" class="scroll-equipo">PLANES</a>
           <a href="#testimonio" class="scroll-testimonio">TESTIMONIOS</a>
@@ -47,7 +76,7 @@
 
         <nav class="menu-principal">
           <a href="#" class="volver-arriba">INICIO</a>
-          <a href="#proyectos" class="scroll-suave">BENEFICIOS</a>
+          <a href="#beneficios" class="scroll-suave">BENEFICIOS</a>
           <a href="#acercaDe" class="scroll-acercaDe">¿QUIENES SOMOS?</a>
           <a href="#equipo" class="scroll-equipo">PLANES</a>
           <a href="#testimonio" class="scroll-testimonio">TESTIMONIOS</a>
@@ -75,7 +104,7 @@
       </a>
       <nav class="menu-principal">
         <a href="#" class="volver-arriba">INICIO</a>
-        <a href="#proyectos" class="scroll-suave">BENEFICIOS</a>
+        <a href="#beneficios" class="scroll-suave">BENEFICIOS</a>
         <a href="#acercaDe" class="scroll-acercaDe">¿QUIENES SOMOS?</a>
         <a href="#equipo" class="scroll-equipo">PLANES</a>
         <a href="#testimonio" class="scroll-testimonio">TESTIMONIOS</a>
@@ -140,7 +169,7 @@
         </div>      
       </section>
 
-      <section class="nosotros" id="nosotross">
+      <section class="nosotros" id="acercaDe">
         <div class="contenedor">
         <div class="titulo-seccion">
           <h2>¿Quienes Somos?</h2>
@@ -269,7 +298,7 @@
         </div>
       </section>
 
-      <section class="contenedor-slider">
+      <section class="contenedor-slider" id="testimonio">
         <div class="slider" id="slider">
           <div class="slide">
             <p>Excelente plataforma, me permite poder ofertar mis productos y tener una mayor cantidad de compradores 
@@ -286,16 +315,16 @@
               </div>
           </div>
           <div class="slide">
-            <p>Excelente plataforma, me permite poder ofertar mis productos y tener una mayor cantidad de compradores 
-              potenciales, puedo hacer los tratos mediante el chat directamente con los interesados y 
-              la compra se realiza de manera online lo cual me genera seguridad por las cantidades que se manejan.</p>
+            <p>Excelente plataforma, me permitio poder ver las ofertas de distintos agricultores y asi comprar 
+              precio y calidada, tambien me brinda mayor facilidad de realizar la compra y seguridad ya que las 
+              transacciones son online, me siento satisfecho ya que me es de gran ayuda.</p>
               <div class="user">
                 <div>
                   <img src="img/slide2.png" alt="Slide">
                 </div>
                 <div>
-                  <h4>VICTOR</h4>
-                  <p>AGRICULTOR</p>
+                  <h4>FELIPE</h4>
+                  <p>MAYORISTA</p>
                 </div>
               </div>
           </div>
@@ -305,7 +334,7 @@
               la compra se realiza de manera online lo cual me genera seguridad por las cantidades que se manejan.</p>
               <div class="user">
                 <div>
-                  <img src="img/slide3.jpg" alt="Slide">
+                  <img src="img/slide1.png" alt="Slide">
                 </div>
                 <div >
                   <h4>VICTOR</h4>
@@ -314,16 +343,16 @@
               </div>
           </div>
           <div class="slide">
-            <p>Excelente plataforma, me permite poder ofertar mis productos y tener una mayor cantidad de compradores 
-              potenciales, puedo hacer los tratos mediante el chat directamente con los interesados y 
-              la compra se realiza de manera online lo cual me genera seguridad por las cantidades que se manejan.</p>
+            <p>Excelente plataforma, me permitio poder ver las ofertas de distintos agricultores y asi comprar 
+              precio y calidada, tambien me brinda mayor facilidad de realizar la compra y seguridad ya que las 
+              transacciones son online, me siento satisfecho ya que me es de gran ayuda.</p>
               <div class="user">
                 <div>
-                  <img src="img/slide4.jpg" alt="Slide">
+                  <img src="img/slide2.png" alt="Slide">
                 </div>
                 <div >
-                  <h4>VICTOR</h4>
-                  <p>AGRICULTOR</p>
+                  <h4>FELIPE</h4>
+                  <p>MAYORISTA</p>
                 </div>
               </div>
           </div>
@@ -334,7 +363,7 @@
               la compra se realiza de manera online lo cual me genera seguridad por las cantidades que se manejan.</p>
               <div class="user">
                 <div>
-                  <img src="img/slide4.jpg" alt="Slide">
+                  <img src="img/slide1.png" alt="Slide">
                 </div>
                 <div >
                   <h4>VICTOR</h4>
@@ -343,16 +372,16 @@
               </div>
           </div>
           <div class="slide">
-            <p>Excelente plataforma, me permite poder ofertar mis productos y tener una mayor cantidad de compradores 
-              potenciales, puedo hacer los tratos mediante el chat directamente con los interesados y 
-              la compra se realiza de manera online lo cual me genera seguridad por las cantidades que se manejan.</p>
+            <p>Excelente plataforma, me permitio poder ver las ofertas de distintos agricultores y asi comprar 
+              precio y calidada, tambien me brinda mayor facilidad de realizar la compra y seguridad ya que las 
+              transacciones son online, me siento satisfecho ya que me es de gran ayuda.</p>
               <div class="user">
                 <div>
-                  <img src="img/slide4.jpg" alt="Slide">
+                  <img src="img/slide2.png" alt="Slide">
                 </div>
                 <div >
-                  <h4>VICTOR</h4>
-                  <p>AGRICULTOR</p>
+                  <h4>FELIPE</h4>
+                  <p>MAYORISTA</p>
                 </div>
               </div>
           </div>
@@ -371,7 +400,7 @@
 
     
     <footer>
-      <div class="contenedor-footer">
+      <div class="contenedor-footer" id="contacto">
         
         <div class="banner-footer">
           <h2>Estamos para ayudarte a crecer</h2>
@@ -398,11 +427,11 @@
             <div class="colum">
               <h3>NAVEGACION</h3>
               <ul>
-                <li>Inicio</li>
-                <li>Beneficios</li>              
-                <li>¿Quienes Somos?</li>
-                <li>Planes</li>
-                <li>Testimonios</li>
+                <li><a href="#" class="volver-arriba">INICIO</a></li>
+                <li><a href="#beneficios" class="scroll-suave">BENEFICIOS</a></li>              
+                <li><a href="#acercaDe" class="scroll-acercaDe">¿QUIENES SOMOS?</a></li>
+                <li><a href="#equipo" class="scroll-equipo">PLANES</a></li>
+                <li><a href="#testimonio" class="scroll-testimonio">TESTIMONIOS</a></li>
               </ul>
             </div>
             <div class="colum">
