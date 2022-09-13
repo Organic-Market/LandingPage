@@ -35,6 +35,10 @@ body{
   font-weight: 400;
 }
 
+.btn{
+  cursor: pointer;
+}
+
 .btn-volver-arriba{
   display: inline-block;
   width: 40px;
