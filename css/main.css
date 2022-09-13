@@ -298,7 +298,11 @@ body{
   align-items: center;
   text-align: center;
 }
-
+.main .beneficios .video-beneficio h3{
+  padding-top: 25px;
+  
+  
+}
 .main .beneficios .video-beneficio img{
   width: 65%;
   margin-bottom: 30px;
@@ -595,7 +599,7 @@ footer .banner-footer{
   margin: 0 auto;
   padding: 90px 80px 0px 80px;
   text-align: left;
-  background-image: url(/img/banner-footer.jpg);
+  background-image: url(../img/banner-footer.jpg);
   background-size: cover;
   background-attachment: fixed;
   backface-visibility: hidden;
