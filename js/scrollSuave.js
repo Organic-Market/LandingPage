@@ -35,15 +35,21 @@ $(document).ready(function () {
     $('html, body').stop().animate({scrollTop: seccionOffsetTop}, 1000);
   });
 
+  $('a.scroll-testimonio').on('click', function (e) {
+    e.preventDefault();
+    var seccionOffsetTop = $($(this).attr('href')).offset().top - 60
+    $('html, body').stop().animate({scrollTop: seccionOffsetTop}, 1000);
+  });
+
   $('a.scroll-acercaDe').on('click', function (e) {
     e.preventDefault();
-    var seccionOffsetTop = $($(this).attr('href')).offset().top - 122
+    var seccionOffsetTop = $($(this).attr('href')).offset().top - 20
     $('html, body').stop().animate({scrollTop: seccionOffsetTop}, 1000);
   });
 
   $('a.scroll-equipo').on('click', function (e) {
     e.preventDefault();
-    var seccionOffsetTop = $($(this).attr('href')).offset().top - 68
+    var seccionOffsetTop = $($(this).attr('href')).offset().top 
     $('html, body').stop().animate({scrollTop: seccionOffsetTop}, 1000);
   });
 

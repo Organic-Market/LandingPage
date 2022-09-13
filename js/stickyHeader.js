@@ -4,7 +4,7 @@ $(document).ready(function () {
 
   $(window).on('scroll', function () {
 
-    var proyectosOffsetTop = $('#proyectos').offset().top;
+    var proyectosOffsetTop = $('#beneficios').offset().top;
 
     if ($(window).scrollTop() >= proyectosOffsetTop) {
 

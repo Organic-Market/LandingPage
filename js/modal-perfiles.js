@@ -7,7 +7,7 @@ $(document).ready(function () {
         var nameperfil=document.querySelector('.name-'+numero).textContent;
         var modal = '<div class="modal" id="modal"><div class="contenedor-modal"><img src="'+ rutaImagen  +'" alt=""><div class="textos-modal"><h2>'+ nameperfil+'</h2><p>'+descriptionperfil+'</p></div></div><div class="btn-cerrar" id="btnCerrar"><i class="fa fa-times" aria-hidden="true"></i></div></div>';
   
-        $('#nosotross').after(modal);
+        $('#acercaDe').after(modal);
   
         $('#btnCerrar').on('click', function () {
         $('#modal').remove();
